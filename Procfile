@@ -1,1 +1,1 @@
-web: gunicorn KY_auth.wsgi
+web: gunicorn auth_system.wsgi
