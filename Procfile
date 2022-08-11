@@ -1,0 +1,1 @@
+web: gunicorn KY_auth.wsgi

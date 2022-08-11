@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container ">
+<div class="row justify-content-center">
+    <div class="col-6 text-center mt-5">
+            <h1 class="">HOMEPAGE</h1>
+            <p> Welcome to the landing page, {% if user.is_authenticated %}{{user.username}} {% else %} visitor {% endif %} !!!</p>
+            <h3>Total registered users: {{count}}</h3>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}
