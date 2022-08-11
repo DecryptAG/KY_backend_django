@@ -95,11 +95,15 @@ WSGI_APPLICATION = 'auth_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dakgfao4ng98v6',
+        'HOST': 'ec2-54-87-179-4.compute-1.amazonaws.com',
+        'PORT':'5432',
+        'USER': 'ugwhrdnsjzozox',
+        'PASSWORD': 'a11b73645fe12308a5768c674e5c27aff31942d76b61abb46af0d4dc5eb03e03',
+
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -134,8 +138,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
